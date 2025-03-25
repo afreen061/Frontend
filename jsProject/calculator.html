@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;       
+        */
+        body{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+           height: 100vh; /* (IMPORTANT) */
+            margin: 0; /*(IMPORTANT) */
+        }
+        .twodiv{
+             display: flex;
+    justify-content:space-between;
+        }
+        .one{
+            width:50px
+        }
+        #main{
+             width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    oninput
+    step
+    min max
+    
+    -->
+    <div id="main" >
+<div class="twodiv">
+    <div class="one"><input type="number" step="0.001"></div>
+    <div class="one"><input type="text" >.</div>
+    <div class="one"><input type="number" step="0.001"></div>
+</div>
+<div>=</div>
+<div></div>
+    </div>
+</body>
+</html>

@@ -22,12 +22,16 @@
              display: flex;
     justify-content:space-between;
         }
-        .one{
-            width:50px
+        .one,input{
+            width:50px;
+        background-color: white;
+       box-sizing: border-box;
+       margin-top: 2px;
         }
         #main{
              width: 200px;
     height: 200px;
+    flex-direction: column;
     background-color: lightblue;
     display: flex;
     justify-content: center;
@@ -35,6 +39,7 @@
     text-align: center;
         }
     </style>
+    <script src="cal.js"></script>
 </head>
 <body>
     <!--
@@ -45,12 +50,13 @@
     -->
     <div id="main" >
 <div class="twodiv">
-    <div class="one"><input type="number" step="0.001"></div>
-    <div class="one"><input type="text" >.</div>
-    <div class="one"><input type="number" step="0.001"></div>
+    <div class="one"><input type="number" step="0.001" id="first" onchange="one()"></div>
+    <div class="one"><input type="text" name="opr"onchange="one()" id="opr"></div>
+    <div class="one"><input type="number" step="0.001" name="sec" id="sec" onchange="one()"></div>
+   
 </div>
-<div>=</div>
-<div></div>
+<div  class="one">=</div>
+<div  class="one">.</div>
     </div>
 </body>
 </html>

@@ -27,10 +27,12 @@
         background-color: white;
        box-sizing: border-box;
        margin-top: 2px;
+       max-width: 50px;
+       height: 20px;
         }
         #main{
              width: 200px;
-    height: 200px;
+    height: 500px;
     flex-direction: column;
     background-color: lightblue;
     display: flex;
@@ -50,13 +52,13 @@
     -->
     <div id="main" >
 <div class="twodiv">
-    <div class="one"><input type="number" step="0.001" id="first" onchange="one()"></div>
-    <div class="one"><input type="text" name="opr"onchange="one()" id="opr"></div>
-    <div class="one"><input type="number" step="0.001" name="sec" id="sec" onchange="one()"></div>
+    <div class="one"><input type="number" step="0.001" id="first"></div>
+    <div class="one"><input type="text" name="opr" id="opr"></div>
+    <div class="one"><input type="number" step="0.001" name="sec" id="sec" ></div>
    
 </div>
-<div  class="one">=</div>
-<div  class="one">.</div>
+<div  class="one" onclick="one()">=</div>
+<div  class="one" id="result"></div>
     </div>
 </body>
 </html>

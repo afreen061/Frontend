@@ -1,6 +1,9 @@
 /*
 onchange --event only function with ()
-.value
+.value--> to get the value of the input field and store as string
+parseFloat()--> to convert string to number
+parseInt()--> to convert string to integer
+Number()--> to convert string to number
 
 
 
@@ -16,14 +19,23 @@ onchange --event only function with ()
 
 
 function one(){
-let one = document.getElementById('first').value;
-    let sec = document.getElementById('sec').value;
-console.log(one+sec)
-console.log(sec)
+let one =Number(document.getElementById('first').value);
+    let sec = Number(document.getElementById('sec').value);
+
 
     let opr = document.getElementById('opr').value;
     switch(opr){
-        case '+':console.log(one+sec)
-        case '-': console.log(one - sec)
+        case '+': document.getElementById('result').innerHTML=one+sec;
+        break;
+        case '-':  document.getElementById('result').innerHTML=one-sec;
+        break;
+        case '*': document.getElementById('result').innerHTML=one*sec; 
+        break;
+        case '/': document.getElementById('result').innerHTML=one/sec;
+        break;
+        case '%': document.getElementById('result').innerHTML=one%sec;
+        break;
+        default: document.getElementById('result').innerHTML="Invalid Operator";
     }
+   
 }

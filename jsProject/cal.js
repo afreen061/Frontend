@@ -16,14 +16,34 @@ onchange --event only function with ()
 
 
 function one(){
-let one = document.getElementById('first').value;
-    let sec = document.getElementById('sec').value;
-console.log(one+sec)
-console.log(sec)
+let one = Number(document.getElementById('first').value);
+let sec = Number(document.getElementById('sec').value);
+
 
     let opr = document.getElementById('opr').value;
     switch(opr){
-        case '+':console.log(one+sec)
-        case '-': console.log(one - sec)
+        case '+':document.getElementById('result').innerHTML=(one+sec)
+        break;
+        case '-': document.getElementById('result').innerHTML = (one - sec)
+        break;
+        case '*': document.getElementById('result').innerHTML = (one * sec)
     }
+}
+function convert(){
+    let C1 = document.getElementById('ek').value;
+    
+
+    let result1 = (parseFloat(C1) * 9 / 5) + 32;
+    document.getElementById('do').value=result1;
+
+}
+function convert1() {
+
+    let C3 = document.getElementById('tin').value;
+
+
+    let result2 = (parseFloat(C3) - 32) * 5 / 9;
+   
+   // C4 = result2; //, which is just a variable holding a value, not directly updating the input field.
+    document.getElementById('char').value=result2
 }

@@ -102,7 +102,12 @@ function Todos(){
     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
+document.addEventListener('DOMContentLoaded',function(){
 
-document.getElementById("myBtn").addEventListener('click',function(){
-  document.getElementById('colorresult').style.backgroundColor="rgb(172, 126, 233)"  
+    document.getElementById("color1").addEventListener('click', function () {
+        document.getElementById('colorresult').style.backgroundColor = "rgb(172, 126, 233)"
+    })
+    document.getElementById("color2").addEventListener('click', function () {
+        document.getElementById('colorresult').style.backgroundColor = "rgb(229, 226, 46)"
+    })
 })

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .one,input{
+            max-width: 50px;
+            max-height: 20px;
+            min-width: 50px;
+            min-height: 20px;
+            background-color: white;
+            margin: 2% 3%;
+            border: none;
+        }
+    
+    .main{
+
+        display: flex;
+      min-width: 200px;
+      min-height: 25px;
+        flex-direction: row;
+        margin-top: 5%;
+        
+    }
+      .mainn{
+        background-color: aquamarine;
+        width: 200px;
+        height: 300px;
+        display: flex;
+       
+flex-direction: column;
+        margin-top: 5%;
+    }
+    #color1{
+        background-color: rgb(172, 126, 233);
+    }
+    #color2{
+        background-color: rgb(229, 226, 46);
+    }
+    </style>
+</head>
+<body>
+    <div class="mainn">
+    <div class="main">
+        <div class="one" id="color1" ></div>
+        
+        <div class="one" id="color2" ></div>
+    </div>
+    <div class="one" id="colorresult"></div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>

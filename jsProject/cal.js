@@ -50,3 +50,59 @@ function convert1() {
    // C4 = result2; //, which is just a variable holding a value, not directly updating the input field.
     document.getElementById('char').value=result2
 }
+// todo local /session
+function Todo(){
+let todo = document.getElementById('todo').value;
+//let elem =document.getElementById('save').innerHTML=todo;
+// let s=localStorage.setItem("Todo",todo);
+// let g= localStorage.getItem("Todo")
+let s=sessionStorage.setItem("Todo",todo);
+let g= sessionStorage.getItem("Todo")
+//document.getElementById('save').innerHTML=localStorage.getItem("Todo");
+let save =document.getElementById('save');
+console.log(g)
+let ele =document.createElement('div');
+ele.appendChild(document.createTextNode(g));
+save.appendChild(ele)
+
+
+
+}
+window.onload =function(){
+    let g= sessionStorage.getItem("Todo") 
+    let save =document.getElementById('save');
+    if(g){
+    let ele =document.createElement('div');
+ele.appendChild(document.createTextNode(g));
+save.appendChild(ele)
+console.log(g,"hjkhkjhk")}
+}
+
+
+
+
+
+
+//Store to do Json
+
+function Todos(){
+    let inputdata = document.getElementById('todo').value;
+    console.log(inputdata,"inputdata")
+    localStorage.setItem('Todos',inputdata)
+    let arr=[];
+    arr.push(inputdata)
+    let gets=  localStorage.getItem('Todos')
+    
+    
+    
+ 
+  
+  //  arr.push(gets);
+    console.log(arr,"array")
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+
+document.getElementById("myBtn").addEventListener('click',function(){
+  document.getElementById('colorresult').style.backgroundColor="rgb(172, 126, 233)"  
+})

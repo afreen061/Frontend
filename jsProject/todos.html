@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="cal.js"></script>
+    <style>
+        .ekk{
+            display:flex ;
+            flex-direction: row;
+            margin-top: 2%;
+            height: 20px;
+        }
+        .main{
+width: 200px;
+height: 200px;
+background-color: bisque;
+display: flex;
+justify-content: space-between;
+margin-top: 5%;
+flex-direction:column;
+
+        }
+        .mainn{
+width: 200px;
+
+background-color: bisque;
+display: flex;
+justify-content: space-between;
+margin-top: 5%;
+flex-direction:column;
+overflow-y:scroll;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="ekk">
+<input type="text" id="todo"><div onclick="Todos()">+</div>
+    </div></div>
+    <div class="mainn" id="save">
+
+        <div class="do">
+   
+        </div></div>
+
+
+</body>
+</html>
